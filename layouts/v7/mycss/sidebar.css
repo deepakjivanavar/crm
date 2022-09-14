@@ -1,0 +1,30 @@
+.sidebar{
+    
+    background:#fff;
+}
+
+.sidebar-app-navigator{
+    background:transparent;
+      border-radius:10px;
+}
+
+.sidebar-menu-item{
+    margin-top:10px;
+    background:#fff;
+    color:#202020;
+    font-size:12px;
+
+}
+
+.sidebar-menu-item:hover{
+    background:#F1F6FF;
+    color:#202020;
+}
+
+
+.sidebarapp-name{
+font-size:12px;
+padding-left:30px;
+    
+}
+

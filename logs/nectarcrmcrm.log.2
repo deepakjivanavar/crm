@@ -1,0 +1,23 @@
+Wed Aug 24 11:01:14 2022,951 [19544] DEBUG user - Entering Users() method ...
+Wed Aug 24 11:01:14 2022,952 [19544] DEBUG VT - Entering getColumnFields(Users) method ...
+Wed Aug 24 11:01:14 2022,952 [19544] DEBUG VT - in getColumnFields Users
+Wed Aug 24 11:01:14 2022,952 [19544] DEBUG VT - Prepared sql query being executed : SELECT tabid, name, ownedby FROM nectarcrm_tab
+Wed Aug 24 11:01:14 2022,953 [19544] DEBUG VT - Prepared sql query being executed : SELECT tabid, fieldname, fieldid, fieldlabel, columnname, tablename, uitype, typeofdata, presence
+		FROM nectarcrm_field WHERE tabid in (?)
+Wed Aug 24 11:01:14 2022,964 [19544] DEBUG VT - Prepared sql query parameters : [29]
+Wed Aug 24 11:01:14 2022,967 [19544] DEBUG VT - Exiting getColumnFields method ...
+Wed Aug 24 11:01:14 2022,967 [19544] DEBUG user - Exiting Users() method ...
+Wed Aug 24 11:01:14 2022,967 [19544] DEBUG VT - Entering getColumnFields(Users) method ...
+Wed Aug 24 11:01:14 2022,967 [19544] DEBUG VT - in getColumnFields Users
+Wed Aug 24 11:01:14 2022,967 [19544] DEBUG VT - Exiting getColumnFields method ...
+Wed Aug 24 11:01:14 2022,975 [19544] DEBUG VT - Prepared sql query being executed : SELECT * FROM nectarcrm_tab
+Wed Aug 24 11:01:14 2022,978 [19544] DEBUG VT - Prepared sql query being executed : SELECT fieldname,modulename,tablename,entityidfield,entityidcolumn from nectarcrm_entityname
+Wed Aug 24 11:01:15 2022,003 [19544] DEBUG VT - Prepared sql query being executed : SELECT reminderid, recordid FROM nectarcrm_activity_reminder_popup
+								INNER JOIN nectarcrm_activity on nectarcrm_activity.activityid = nectarcrm_activity_reminder_popup.recordid
+								INNER JOIN nectarcrm_crmentity ON nectarcrm_activity_reminder_popup.recordid = nectarcrm_crmentity.crmid
+								WHERE nectarcrm_activity_reminder_popup.status = 0
+								AND nectarcrm_crmentity.smownerid = ? AND nectarcrm_crmentity.deleted = 0
+								AND ((DATE_FORMAT(nectarcrm_activity_reminder_popup.date_start,'%Y-%m-%d') <= ?)
+								AND (TIME_FORMAT(nectarcrm_activity_reminder_popup.time_start,'%H:%i') <= ?))
+								AND nectarcrm_activity.eventstatus <> 'Held' AND (nectarcrm_activity.status <> 'Completed' OR nectarcrm_activity.status IS NULL) LIMIT 20
+Wed Aug 24 11:01:15 2022,003 [19544] DEBUG VT - Prepared sql query parameters : [1,2022-08-24,11:02]

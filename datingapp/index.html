@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Dating App</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style type="text/css" media="screen">
+@import url("css/layout.css");
+</style>
+</head>
+<body>
+<div id="layout">
+  <div id="header">
+    <div class="heart"><img src="images/heart_2.gif" alt="" /></div>
+    <div class="form_container">
+      <h2>Intimate Search</h2>
+      <form action="#" method="get">
+        <fieldset>
+        <div class="search_row">
+          <div class="search_column_1">
+            <label>I am a</label>
+          </div>
+          <div class="search_column_2">
+            <select class="gender">
+              <option>Male</option>
+            </select>
+            <label>Seeking a</label>
+            <select class="gender">
+              <option>Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="search_row">
+          <div class="search_column_1">
+            <label>Looking for a</label>
+          </div>
+          <div class="search_column_2">
+            <select class="date">
+              <option>Date</option>
+            </select>
+          </div>
+        </div>
+        <div class="search_row">
+          <div class="search_column_1">
+            <label>I was born</label>
+          </div>
+          <div class="search_column_2">
+            <select class="dob">
+              <option>Month</option>
+            </select>
+            <select class="dob">
+              <option>Date</option>
+            </select>
+            <select class="dob">
+              <option>Year</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="search_row last">
+          <div class="search_column_1">&nbsp;</div>
+          <div class="search_column_2">
+            <input type="image" src="images/search.gif" class="search_btn float-md-right"/>
+          </div>
+        </div>
+        </fieldset>
+      </form>
+      <br>
+    </div>
+    <div class="banner"><img src="images/pic_1.gif" alt="" /></div>
+	
+    <div id="" class="mt-1" style="background-color:#ff4d4d;color:white">
+      <nav class="navbar navbar-expand-lg " >
+  <a class="navbar-brand" href="#" style="color:white">DatingApp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#" style="color:white">Home </a>
+      <a class="nav-item nav-link" href="#"style="color:white">Features</a>
+      <a class="nav-item nav-link" href="#"style="color:white">About US</a>
+	  <a class="nav-item nav-link" href="#"style="color:white">Contact US</a>
+	  
+      
+    </div>
+	
+  </div>
+   <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                <li class="nav-item order-2 order-md-1" style="background-image:none"></li>
+                <li class="dropdown order-1" style="background-image:none" >
+                    <div class="header-btn">
+              <!-- <a href="profile/dashboard.php" class="btn btn-danger btn-sm">Profile</a> -->
+                             <a href="#" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#loginModal" ><i class="fas fa-sign-in-alt"></i> Login</a>
+              <a href="#" id="register_form_id" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#signupModal"><i class="fa fa-user-plus"></i>Signup</a>
+             
+                        
+          </div>
+                </li>
+            </ul>
+       
+</nav>
+    </div>
+  </div>
+  <div id="body_container">
+    <div id="left_container">
+      <div class="latest_profile">
+        <h2>Latest Profiles</h2>
+        <div class="detail">
+          <div class="photo"><a href="#"><img src="images/pic_2.gif" alt="" /></a></div>
+          <div class="containt ml-3">
+            <p>Name: <span>Jenifer</span><br />
+              Age: <span>20 yrs</span><br />
+              Location: <span>UK</span><br />
+              Bio: <span>This is a demo text. Some text can go here. You will be able to edit this text pat.</span></p>
+            <span class="know_more"><a href="#">Know more</a></span></div>
+        </div>
+        <div class="detail last ">
+          <div class="photo"><a href="#"><img src="images/pic_3.gif" alt="" /></a></div>
+          <div class="containt ml-3">
+            <p>Name: <span>Yum Kim Duk</span><br />
+              Age: <span>29 yrs</span><br />
+              Location: <span>Milan</span><br />
+              Bio: <span>This is a demo text. Some text can go here.</span></p>
+            <span class="know_more"><a href="#">Know more</a></span></div>
+        </div>
+        <div class="find_more">
+          <p><a href="#">Find more profiles</a></p>
+        </div>
+      </div>
+    </div>
+    <div id="right_container">
+      <div class="top_containt">
+        <h2>Welcome to Dating App</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+      <div class="bottom_containt">
+        <h2>Don’t Stay Alone!</h2>
+        <ul>
+          <li>Consectetuer Lorem ipsum dolor adipiscing elit.</li>
+          <li class="b">Suspendisse interdum velit eget pede.</li>
+          <li class="c">Nunc a quam quis dui auctor lacinia.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer_menu">
+    <ul style="color:#FFF;">
+      Copyright (c) datingapp.com. All rights reserved. 
+    </ul>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign In to Your Account
+</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary" data-dismiss="modal" onclick="getProfile()">Login</button>&nbsp;&nbsp;&nbsp;
+  <a href="javascript:void(0)" >  Forgot password? </a>
+</form>
+      </div>
+      <div class="modal-footer">
+       
+		Don't have an account? <a href="javascript:void(0)" onclick="$('#loginModal').modal('hide');$('#signupModal').modal('show');">  Sign Up </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Signup -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">SignUp
+</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Retype Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary" data-dismiss="modal">Login</button>&nbsp;&nbsp;&nbsp;
+  
+</form>
+      </div>
+      <div class="modal-footer">
+       
+		
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+<script>
+function getProfile()
+{
+  window.location.href ='http://crmuat.nectarinfotel.com/datingapp/profile.html';
+  return;
+}
+</script>

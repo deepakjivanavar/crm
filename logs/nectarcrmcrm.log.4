@@ -1,0 +1,103 @@
+Wed Aug 24 10:38:54 2022,096 [19544] INFO VT - PearDatabase ->ADODB disconnect
+Wed Aug 24 10:38:56 2022,048 [19544] DEBUG user - Entering Users() method ...
+Wed Aug 24 10:38:56 2022,048 [19544] DEBUG VT - Entering getColumnFields(Users) method ...
+Wed Aug 24 10:38:56 2022,048 [19544] DEBUG VT - in getColumnFields Users
+Wed Aug 24 10:38:56 2022,049 [19544] DEBUG VT - Prepared sql query being executed : SELECT tabid, name, ownedby FROM nectarcrm_tab
+Wed Aug 24 10:38:56 2022,050 [19544] DEBUG VT - Prepared sql query being executed : SELECT tabid, fieldname, fieldid, fieldlabel, columnname, tablename, uitype, typeofdata, presence
+		FROM nectarcrm_field WHERE tabid in (?)
+Wed Aug 24 10:38:56 2022,051 [19544] DEBUG VT - Prepared sql query parameters : [29]
+Wed Aug 24 10:38:56 2022,054 [19544] DEBUG VT - Exiting getColumnFields method ...
+Wed Aug 24 10:38:56 2022,054 [19544] DEBUG user - Exiting Users() method ...
+Wed Aug 24 10:38:56 2022,054 [19544] DEBUG VT - Entering getColumnFields(Users) method ...
+Wed Aug 24 10:38:56 2022,054 [19544] DEBUG VT - in getColumnFields Users
+Wed Aug 24 10:38:56 2022,054 [19544] DEBUG VT - Exiting getColumnFields method ...
+Wed Aug 24 10:38:56 2022,064 [19544] DEBUG VT - Prepared sql query being executed : SELECT * FROM nectarcrm_tab
+Wed Aug 24 10:38:56 2022,068 [19544] DEBUG VT - Prepared sql query being executed : SELECT fieldname,modulename,tablename,entityidfield,entityidcolumn from nectarcrm_entityname
+Wed Aug 24 10:38:56 2022,180 [19544] DEBUG VT - Prepared sql query being executed : SELECT id,tabname,sequence,isdefault FROM nectarcrm_dashboard_tabs WHERE userid=? AND isdefault =?
+Wed Aug 24 10:38:56 2022,180 [19544] DEBUG VT - Prepared sql query parameters : [1,1]
+Wed Aug 24 10:38:56 2022,181 [19544] INFO VT - PearDatabse ->Array
+(
+    [id] => 2
+    [tabname] => My Dashboard
+    [sequence] => 1
+    [isdefault] => 1
+)
+
+Wed Aug 24 10:38:56 2022,182 [19544] DEBUG VT - Prepared sql query being executed : SELECT id FROM nectarcrm_module_dashboard_widgets WHERE linkid = ? AND userid = ? AND dashboardtabid=?
+Wed Aug 24 10:38:56 2022,182 [19544] DEBUG VT - Prepared sql query parameters : [65,1,2]
+Wed Aug 24 10:38:56 2022,188 [19544] DEBUG VT - Prepared sql query being executed : SELECT * FROM nectarcrm_def_org_share INNER JOIN nectarcrm_tab ON nectarcrm_tab.tabid = nectarcrm_def_org_share.tabid WHERE name=?
+Wed Aug 24 10:38:56 2022,188 [19544] DEBUG VT - Prepared sql query parameters : [Leads]
+Wed Aug 24 10:38:56 2022,189 [19544] DEBUG VT - Prepared sql query being executed : select picklistid from nectarcrm_picklist where name = ?
+Wed Aug 24 10:38:56 2022,189 [19544] DEBUG VT - Prepared sql query parameters : [industry]
+Wed Aug 24 10:38:56 2022,192 [19544] DEBUG VT - Prepared sql query being executed : select picklistid from nectarcrm_picklist where name = ?
+Wed Aug 24 10:38:56 2022,192 [19544] DEBUG VT - Prepared sql query parameters : [industry]
+Wed Aug 24 10:38:56 2022,194 [19544] DEBUG VT - Entering getSubordinateRoleAndUsers(H4) method ...
+Wed Aug 24 10:38:56 2022,194 [19544] DEBUG VT - Entering getRoleSubordinates(H4) method ...
+Wed Aug 24 10:38:56 2022,194 [19544] DEBUG VT - Entering getRoleInformation(H4) method ...
+Wed Aug 24 10:38:56 2022,195 [19544] DEBUG VT - Prepared sql query being executed : select * from nectarcrm_role where roleid=?
+Wed Aug 24 10:38:56 2022,195 [19544] DEBUG VT - Prepared sql query parameters : [H4]
+Wed Aug 24 10:38:56 2022,196 [19544] DEBUG VT - Exiting getRoleInformation method ...
+Wed Aug 24 10:38:56 2022,197 [19544] DEBUG VT - Prepared sql query being executed : select * from nectarcrm_role where parentrole like ? order by parentrole asc
+Wed Aug 24 10:38:56 2022,197 [19544] DEBUG VT - Prepared sql query parameters : [H1::H2::H3::H4::%]
+Wed Aug 24 10:38:56 2022,198 [19544] DEBUG VT - Exiting getRoleSubordinates method ...
+Wed Aug 24 10:38:56 2022,198 [19544] DEBUG VT - Entering getRoleUsers(H8) method ...
+Wed Aug 24 10:38:56 2022,198 [19544] DEBUG VT - Prepared sql query being executed : select nectarcrm_user2role.*,nectarcrm_users.* from nectarcrm_user2role inner join nectarcrm_users on nectarcrm_users.id=nectarcrm_user2role.userid where roleid=?
+Wed Aug 24 10:38:56 2022,198 [19544] DEBUG VT - Prepared sql query parameters : [H8]
+Wed Aug 24 10:38:56 2022,201 [19544] DEBUG VT - Exiting getRoleUsers method ...
+Wed Aug 24 10:38:56 2022,201 [19544] DEBUG VT - Exiting getSubordinateRoleAndUsers method ...
+Wed Aug 24 10:38:56 2022,201 [19544] DEBUG VT - Prepared sql query being executed : SELECT distinct industry FROM nectarcrm_industry inner join nectarcrm_role2picklist on nectarcrm_industry.picklist_valueid=nectarcrm_role2picklist.picklistvalueid and roleid in (?,?) order by sortorderid
+Wed Aug 24 10:38:56 2022,201 [19544] DEBUG VT - Prepared sql query parameters : [H4,H8]
+Wed Aug 24 10:38:56 2022,215 [19544] DEBUG lead - Entering Leads() method ...
+Wed Aug 24 10:38:56 2022,215 [19544] DEBUG VT - Entering getColumnFields(Leads) method ...
+Wed Aug 24 10:38:56 2022,215 [19544] DEBUG VT - in getColumnFields Leads
+Wed Aug 24 10:38:56 2022,215 [19544] DEBUG VT - Prepared sql query being executed : SELECT tabid, fieldname, fieldid, fieldlabel, columnname, tablename, uitype, typeofdata, presence
+		FROM nectarcrm_field WHERE tabid in (?)
+Wed Aug 24 10:38:56 2022,215 [19544] DEBUG VT - Prepared sql query parameters : [7]
+Wed Aug 24 10:38:56 2022,218 [19544] DEBUG VT - Exiting getColumnFields method ...
+Wed Aug 24 10:38:56 2022,218 [19544] DEBUG lead - Exiting Lead method ...
+Wed Aug 24 10:38:56 2022,218 [19544] DEBUG VT - Entering getColumnFields(Leads) method ...
+Wed Aug 24 10:38:56 2022,218 [19544] DEBUG VT - in getColumnFields Leads
+Wed Aug 24 10:38:56 2022,218 [19544] DEBUG VT - Exiting getColumnFields method ...
+Wed Aug 24 10:38:56 2022,220 [19544] DEBUG VT - Prepared sql query being executed : SELECT COUNT(*) as count, CASE WHEN nectarcrm_leaddetails.industry IS NULL OR nectarcrm_leaddetails.industry = "" THEN "" 
+						ELSE nectarcrm_leaddetails.industry END AS industryvalue FROM nectarcrm_leaddetails 
+						INNER JOIN nectarcrm_crmentity ON nectarcrm_leaddetails.leadid = nectarcrm_crmentity.crmid
+						AND deleted=0 AND converted = 0   
+						INNER JOIN nectarcrm_industry ON nectarcrm_leaddetails.industry = nectarcrm_industry.industry 
+                        WHERE nectarcrm_leaddetails.industry IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+						GROUP BY industryvalue ORDER BY nectarcrm_industry.sortorderid
+Wed Aug 24 10:38:56 2022,220 [19544] DEBUG VT - Prepared sql query parameters : [Apparel,67,STEEL,IT Enables Services,COAL,CEMENT,10,BOILER,Information Technology Enabled Services,90,CARBON,IT Enabled Services,-,Telecommunications & ISP,Banking,Biotechnology,Chemicals,Communications,Construction,Consulting,Education,Electronics,Energy,Engineering,Entertainment,Environmental,Finance,Food & Beverage,Government,Healthcare,Hospitality,Insurance,Machinery,Manufacturing,Media,Not For Profit,Recreation,Retail,Shipping,Technology,Telecommunications,Transportation,Utilities,Other]
+Wed Aug 24 10:38:56 2022,225 [19544] DEBUG VT - Prepared sql query being executed : SELECT cvid FROM nectarcrm_customview WHERE viewname = 'All' AND entitytype = ?
+Wed Aug 24 10:38:56 2022,225 [19544] DEBUG VT - Prepared sql query parameters : [Leads]
+Wed Aug 24 10:38:56 2022,226 [19544] DEBUG VT - Prepared sql query being executed : SELECT * FROM nectarcrm_module_dashboard_widgets
+			INNER JOIN nectarcrm_links ON nectarcrm_links.linkid = nectarcrm_module_dashboard_widgets.linkid
+			WHERE linktype = ? AND nectarcrm_links.linkid = ? AND userid = ?
+Wed Aug 24 10:38:56 2022,226 [19544] DEBUG VT - Prepared sql query parameters : [DASHBOARDWIDGET,65,1]
+Wed Aug 24 10:38:56 2022,233 [19544] DEBUG VT - Prepared sql query being executed : SELECT * FROM nectarcrm_role WHERE roleid = ?
+Wed Aug 24 10:38:56 2022,233 [19544] DEBUG VT - Prepared sql query parameters : [H4]
+Wed Aug 24 10:38:56 2022,234 [19544] DEBUG VT - Entering get_user_array(,ACTIVE,,) method ...
+Wed Aug 24 10:38:56 2022,237 [19544] DEBUG VT - Sharing is Public. All nectarcrm_users should be listed
+Wed Aug 24 10:38:56 2022,237 [19544] DEBUG VT - Prepared sql query being executed : SELECT id, user_name,first_name,last_name from nectarcrm_users WHERE status=? and (user_name != 'admin' OR is_owner=1) order by user_name ASC
+Wed Aug 24 10:38:56 2022,237 [19544] DEBUG VT - Prepared sql query parameters : [ACTIVE]
+Wed Aug 24 10:38:56 2022,239 [19544] INFO VT - PearDatabase ->ADODB fetchByAssoc return null
+Wed Aug 24 10:38:56 2022,239 [19544] DEBUG VT - Exiting get_user_array method ...
+Wed Aug 24 10:38:56 2022,247 [19544] DEBUG VT - Entering get_user_array(,ACTIVE,,) method ...
+Wed Aug 24 10:38:56 2022,249 [19544] DEBUG VT - Sharing is Public. All nectarcrm_users should be listed
+Wed Aug 24 10:38:56 2022,249 [19544] DEBUG VT - Prepared sql query being executed : SELECT groupid, groupname from nectarcrm_groups order by groupname ASC
+Wed Aug 24 10:38:56 2022,250 [19544] INFO VT - PearDatabase ->ADODB fetchByAssoc return null
+Wed Aug 24 10:38:56 2022,250 [19544] DEBUG VT - Exiting get_user_array method ...
+Wed Aug 24 10:38:56 2022,315 [19544] DEBUG user - Entering Users() method ...
+Wed Aug 24 10:38:56 2022,315 [19544] DEBUG VT - Entering getColumnFields(Users) method ...
+Wed Aug 24 10:38:56 2022,315 [19544] DEBUG VT - in getColumnFields Users
+Wed Aug 24 10:38:56 2022,316 [19544] DEBUG VT - Prepared sql query being executed : SELECT tabid, name, ownedby FROM nectarcrm_tab
+Wed Aug 24 10:38:56 2022,317 [19544] DEBUG VT - Prepared sql query being executed : SELECT tabid, fieldname, fieldid, fieldlabel, columnname, tablename, uitype, typeofdata, presence
+		FROM nectarcrm_field WHERE tabid in (?)
+Wed Aug 24 10:38:56 2022,318 [19544] DEBUG VT - Prepared sql query parameters : [29]
+Wed Aug 24 10:38:56 2022,321 [19544] DEBUG VT - Exiting getColumnFields method ...
+Wed Aug 24 10:38:56 2022,322 [19544] DEBUG user - Exiting Users() method ...
+Wed Aug 24 10:38:56 2022,322 [19544] DEBUG VT - Entering getColumnFields(Users) method ...
+Wed Aug 24 10:38:56 2022,322 [19544] DEBUG VT - in getColumnFields Users
+Wed Aug 24 10:38:56 2022,322 [19544] DEBUG VT - Exiting getColumnFields method ...
+Wed Aug 24 10:38:56 2022,330 [19544] DEBUG VT - Prepared sql query being executed : SELECT * FROM nectarcrm_tab
+Wed Aug 24 10:38:56 2022,334 [19544] DEBUG VT - Prepared sql query being executed : SELECT fieldname,modulename,tablename,entityidfield,entityidcolumn from nectarcrm_entityname
+Wed Aug 24 10:38:56 2022,355 [19544] DEBUG VT - Prepared sql query being executed : SELECT * FROM nectarcrm_pbxmanager AS module_table INNER JOIN nectarcrm_crmentity AS entity_table  WHERE module_table.callstatus IN(?,?) AND module_table.direction=? AND module_table.pbxmanagerid=entity_table.crmid AND entity_table.deleted=0
+Wed Aug 24 10:38:56 2022,356 [19544] DEBUG VT - Prepared sql query parameters : [ringing,in-progress,inbound]

@@ -1,0 +1,26 @@
+.dashbtn{
+    background:#7d86a9;
+    border-radius:20px;
+    border:none;
+    color:#fff;
+   padding:5px 15px 5px 15px;
+   margin:5px;
+}
+
+.dashbtn:hover{
+    background:transparent;
+      color:#f26522;
+ }
+ 
+ .dashboardTab{
+     background:transparent;
+         
+  
+ }
+ 
+  .dashboardTab:hover{
+     background: #cecfd1;
+
+ }
+ 
+ 

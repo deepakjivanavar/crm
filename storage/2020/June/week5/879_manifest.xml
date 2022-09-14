@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<module>
+<exporttime>2017-02-09 14:44:19</exporttime>
+<name>Corrensa</name>
+<label>Corrensa</label>
+<parent></parent>
+<type>extension</type>
+<version>3.0</version>
+<dependencies>
+<vtiger_version>7.1.0</vtiger_version>
+</dependencies>
+    <license>
+        <file>License.txt</file>
+    </license>
+<tables>
+</tables>
+<sharingaccess>
+<default>public_readwritedelete</default>
+</sharingaccess>
+<customlinks>
+<customlink>
+<linktype>HEADERSCRIPT</linktype>
+<linklabel>CorrensaGlobalJS</linklabel>
+<linkurl><![CDATA[layouts/vlayout/modules/Corrensa/resources/js/Corrensa.js]]></linkurl>
+<linkicon><![CDATA[]]></linkicon>
+<sequence>0</sequence>
+<handler_path><![CDATA[]]></handler_path>
+<handler_class><![CDATA[]]></handler_class>
+<handler><![CDATA[]]></handler>
+</customlink>
+</customlinks>
+<crons>
+</crons>
+</module>
