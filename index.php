@@ -10,11 +10,13 @@
 
 //Overrides GetRelatedList : used to get related query
 //TODO : Eliminate below hacking solution
-include_once 'config.php';
-include_once 'include/Webservices/Relation.php';
+// include_once 'config.php';
+// include_once 'include/Webservices/Relation.php';
 
-include_once 'vtlib/nectarcrm/Module.php';
-include_once 'includes/main/WebUI.php';
+// include_once 'vtlib/nectarcrm/Module.php';
+// include_once 'includes/main/WebUI.php';
 
-$webUI = new nectarcrm_WebUI();
-$webUI->process(new nectarcrm_Request($_REQUEST, $_REQUEST));
+// $webUI = new nectarcrm_WebUI();
+// $webUI->process(new nectarcrm_Request($_REQUEST, $_REQUEST));
+//test
+//testing
